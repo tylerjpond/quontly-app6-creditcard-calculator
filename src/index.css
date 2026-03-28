@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: quontly;
+}
+
+@plugin "daisyui/theme" {
+  name: "quontly";
+  default: true;
+
+  --color-base-100: #f8fafc;
+  --color-base-200: #f1f5f9;
+  --color-base-300: #e2e8f0;
+  --color-base-content: #1e293b;
+
+  --color-primary: #0f766e;
+  --color-primary-content: #ffffff;
+
+  --color-secondary: #64748b;
+  --color-secondary-content: #ffffff;
+
+  --color-accent: #f59e0b;
+  --color-accent-content: #1f2937;
+
+  --color-neutral: #334155;
+  --color-neutral-content: #f8fafc;
+
+  --color-info: #0ea5e9;
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+
+  --radius-selector: 0rem;
+  --radius-field: 0rem;
+  --radius-box: 0rem;
+}
+
+@layer base {
+  :root {
+    color: #1e293b;
+    background-color: #f8fafc;
+    font-family: 'DM Sans', 'Segoe UI', sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    background:
+      radial-gradient(circle at top left, rgba(15, 118, 110, 0.08), transparent 24%),
+      linear-gradient(180deg, #f8fafc 0%, #ecfeff 100%);
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: 'DM Sans', 'Segoe UI', sans-serif;
+    letter-spacing: -0.01em;
+  }
+
+  code,
+  pre,
+  kbd {
+    font-family: 'DM Mono', Consolas, monospace;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .no-spinner::-webkit-outer-spin-button,
+  .no-spinner::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .no-spinner {
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+
+  .calc-slider::-webkit-slider-runnable-track {
+    border-radius: 999px;
+  }
+
+  .calc-slider::-moz-range-track {
+    border-radius: 999px;
+  }
+
+  .calc-slider::-webkit-slider-thumb {
+    box-shadow: 0 0 0 6px rgba(15, 118, 110, 0.12);
+  }
+
+  .calc-slider::-moz-range-thumb {
+    box-shadow: 0 0 0 6px rgba(15, 118, 110, 0.12);
+  }
+}
