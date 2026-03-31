@@ -1,109 +1,84 @@
 @import "tailwindcss";
-
-@plugin "daisyui" {
-  themes: quontly;
-}
+@plugin "daisyui";
 
 @plugin "daisyui/theme" {
   name: "quontly";
   default: true;
 
-  --color-base-100: #f8fafc;
-  --color-base-200: #f1f5f9;
-  --color-base-300: #e2e8f0;
-  --color-base-content: #1e293b;
+  --color-base-100: #101722;
+  --color-base-200: #152033;
+  --color-base-300: #213049;
+  --color-base-content: #ebf1fb;
 
-  --color-primary: #0f766e;
-  --color-primary-content: #ffffff;
+  --color-primary: #ff7a45;
+  --color-primary-content: #1c0c06;
 
-  --color-secondary: #64748b;
-  --color-secondary-content: #ffffff;
+  --color-secondary: #34b4a8;
+  --color-secondary-content: #041412;
 
-  --color-accent: #f59e0b;
-  --color-accent-content: #1f2937;
+  --color-accent: #f0b53f;
+  --color-accent-content: #1c1200;
 
-  --color-neutral: #334155;
-  --color-neutral-content: #f8fafc;
+  --color-neutral: #0f1520;
+  --color-neutral-content: #e9f1ff;
 
-  --color-info: #0ea5e9;
-  --color-success: #22c55e;
-  --color-warning: #f59e0b;
-  --color-error: #ef4444;
+  --color-info: #4a9eff;
+  --color-success: #31bf83;
+  --color-warning: #d5a344;
+  --color-error: #f06161;
 
-  --radius-selector: 0rem;
-  --radius-field: 0rem;
-  --radius-box: 0rem;
+  --radius-box: 1rem;
+  --radius-field: 0.75rem;
+  --radius-selector: 0.75rem;
 }
 
-@layer base {
-  :root {
-    color: #1e293b;
-    background-color: #f8fafc;
-    font-family: 'DM Sans', 'Segoe UI', sans-serif;
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+:root {
+  color: #ebf1fb;
+  background-color: #0b111b;
+  font-family: "Sora", "Segoe UI", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-  html {
-    scroll-behavior: smooth;
-  }
+html {
+  scroll-behavior: smooth;
+}
 
-  body {
-    margin: 0;
-    min-width: 320px;
-    background:
-      radial-gradient(circle at top left, rgba(15, 118, 110, 0.08), transparent 24%),
-      linear-gradient(180deg, #f8fafc 0%, #ecfeff 100%);
-  }
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #0b111b;
+}
 
-  #root {
-    min-height: 100vh;
-  }
+a {
+  text-decoration: none;
+}
 
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-family: 'DM Sans', 'Segoe UI', sans-serif;
-    letter-spacing: -0.01em;
-  }
+.bg-hub {
+  background:
+    radial-gradient(circle at 8% 8%, rgba(255, 122, 69, 0.22), transparent 34%),
+    radial-gradient(circle at 88% 18%, rgba(52, 180, 168, 0.2), transparent 30%),
+    linear-gradient(180deg, #0b111b 0%, #111a2a 42%, #0b111b 100%);
+}
 
-  code,
-  pre,
-  kbd {
-    font-family: 'DM Mono', Consolas, monospace;
-  }
+.bg-hub-soft {
+  background: linear-gradient(180deg, #152033 0%, #111a2a 100%);
+}
 
-  a {
-    text-decoration: none;
-  }
+.card-accent-credit {
+  background: #1f2f4a;
+}
 
-  .no-spinner::-webkit-outer-spin-button,
-  .no-spinner::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
+.no-spinner::-webkit-outer-spin-button,
+.no-spinner::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
-  .no-spinner {
-    -moz-appearance: textfield;
-    appearance: textfield;
-  }
-
-  .calc-slider::-webkit-slider-runnable-track {
-    border-radius: 999px;
-  }
-
-  .calc-slider::-moz-range-track {
-    border-radius: 999px;
-  }
-
-  .calc-slider::-webkit-slider-thumb {
-    box-shadow: 0 0 0 6px rgba(15, 118, 110, 0.12);
-  }
-
-  .calc-slider::-moz-range-thumb {
-    box-shadow: 0 0 0 6px rgba(15, 118, 110, 0.12);
-  }
+.no-spinner {
+  -moz-appearance: textfield;
+  appearance: textfield;
 }

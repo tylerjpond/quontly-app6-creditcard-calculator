@@ -31,7 +31,7 @@ export const siteMeta = {
 }
 
 export const affiliateCards: AffiliateCardContent[] = [
-  {
+  /**{
     title: 'Debt payoff spreadsheet bundle',
     badge: 'Template',
     description:
@@ -44,10 +44,10 @@ export const affiliateCards: AffiliateCardContent[] = [
     ctaLabel: 'Get templates',
     href: 'https://gumroad.com/',
     disclosureTag: 'Affiliate Link',
-  },
+  },**/
   {
     title: 'Budgeting app recommendations',
-    badge: 'Budget tool',
+    badge: 'Budgeting',
     description:
       'Pair your payoff plan with category budgeting to protect your monthly payment consistency.',
     highlights: [
